@@ -1,7 +1,117 @@
+h1, h3 {
+    color: #93B5C6;
+}
+
 
 /* Nav Bar */
+
+.navbar {
+    padding: 0;
+}
 
 #navbarNav {
     justify-content: flex-end;
 }
 
+.nav-item {
+    text-align: center;
+}
+
+.container-fluid {
+    padding: 8px;
+    background: linear-gradient(
+        to right, 
+        #ffffff 0%, 
+        #889daad0 50%, 
+        #889daad2 50%, 
+        #93B5C6 100%
+    );
+}
+
+
+/* Main */
+
+main {
+    padding: 50px 20px;
+}
+
+
+/* About me */
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.my-photo {
+    padding: 50px;
+    flex: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #93b5c65b;
+    border-radius: 20px;
+}
+
+.my-photo img {
+    border-radius: 100%;
+    width: 200px;
+}
+
+
+/* What I Do */
+
+.what-i-do {
+    flex: 1;
+    padding: 50px 40px;
+}
+
+.what-i-do h3 {
+    text-align: center;
+}
+
+
+/* Personal Data */
+
+.personal-data {
+    flex: 1;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.personal-data th {
+    white-space: nowrap;
+}
+
+.personal-data th {
+    text-align: left;
+    padding-top: 10px;
+    color: #93B5C6;
+}
+
+.personal-data td {
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+
+/* For Medium Screens */
+
+@media screen and (max-width: 900px) {
+    .about-me {
+        flex-direction: column;
+    }
+
+    .personal-data table {
+        margin: auto;
+    }
+}
+
+
+/* For Small Screens */
+
+@media screen and (max-width: 400px) {
+    
+}
