@@ -1,5 +1,17 @@
+:root{
+    --main-color: #93B5C6;
+    --darker-main-color: #889daad2;
+    --dark-main-color:#889daad0;
+    --background-color: #93b5c65b;
+    --nav-footer-color: #4b7185;
+    --hover-color: #5d8ba3;
+    --white-color-nav: #ffffff;
+}
+
+
+
 h1, h3, h5 {
-    color: #93B5C6;
+    color: var(--main-color);
 }
 
 
@@ -11,10 +23,10 @@ h1, h3, h5 {
 
 .navbar a {
     font-weight: 500;
-    color:#4b7185;
+    color: var(--nav-footer-color);
 }
 .navbar a:hover {
-    color: #5d8ba3;
+    color: var(--hover-color);
 }
 
 #navbarNav {
@@ -29,10 +41,10 @@ h1, h3, h5 {
     padding: 8px;
     background: linear-gradient(
         to right, 
-        #ffffff 0%, 
-        #889daad0 50%, 
-        #889daad2 50%, 
-        #93B5C6 100%
+        var(--white-color-nav) 0%, 
+        var(--dark-main-color) 50%, 
+        var(--darker-main-color) 50%, 
+        var(--main-color) 100%
     );
 }
 
@@ -60,7 +72,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #93b5c65b;
+    background-color: var(--background-color);
     border-radius: 20px;
 }
 
@@ -99,7 +111,7 @@ main {
     text-align: right;
     padding-top: 10px;
     padding-right: 15px;
-    color: #93B5C6;
+    color: var(--main-color);
 }
 
 .personal-data td {
@@ -141,7 +153,7 @@ main {
 
 .project-info p a {
     text-decoration: none;
-    color: #93B5C6;
+    color: var(--main-color);
 }
 
 .pswp-gallery {
@@ -150,7 +162,7 @@ main {
     flex-wrap: wrap;
     flex: 2;
     padding: 20px;
-    background-color: #93b5c65b;
+    background-color: var(--background-color);
     border-radius: 20px;
 }
 
@@ -159,10 +171,23 @@ main {
 }
 
 .pswp-gallery img{
-   border: 3px solid #889daad0;
+   border: 3px solid var(--dark-main-color);
    width: 200px;
    height: 150px;
    object-fit: cover;
+}
+
+/* footer */
+
+.footer-copyright {
+    background-color: var(--darker-main-color);
+    padding: 10px;
+}
+.footer-copyright p{
+    color: var(--nav-footer-color);
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 500;
 }
 
 /* For Medium Screens */
@@ -186,5 +211,18 @@ main {
 /* For Small Screens */
 
 @media screen and (max-width: 400px) {
-    
+    .what-i-do {
+        margin-top: 40px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .project .project-info  {
+        margin-top: 40px;
+        padding: 10px;
+    }
+
+    .project .pswp-gallery {
+        margin-top: 30px;
+    }   
 }
