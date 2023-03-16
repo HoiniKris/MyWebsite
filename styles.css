@@ -90,19 +90,21 @@ main {
     padding: 50px 20px;
 }
 
-.personal-data th {
-    white-space: nowrap;
+.personal-data table {
+    width: 100%;
 }
 
 .personal-data th {
-    text-align: left;
+    white-space: nowrap;
+    text-align: right;
     padding-top: 10px;
+    padding-right: 15px;
     color: #93B5C6;
 }
 
 .personal-data td {
     text-align: left;
-    padding-left: 30px;
+    padding-left: 15px;
     padding-top: 10px;
 }
 
@@ -136,11 +138,13 @@ main {
 .project-info p {
     margin-top: 20px;
 }
+
 .project-info p a {
     text-decoration: none;
     color: #93B5C6;
 }
-#gallery--project-1 {
+
+.pswp-gallery {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -150,11 +154,11 @@ main {
     border-radius: 20px;
 }
 
-#gallery--project-1 a {
+.pswp-gallery a {
     margin: 10px;
 }
 
-#gallery--project-1 img{
+.pswp-gallery img{
    border: 3px solid #889daad0;
    width: 200px;
    height: 150px;
