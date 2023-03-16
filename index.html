@@ -55,7 +55,7 @@
 
 			<div class="about-me">
 				<div class="my-photo">
-					<img src="/MyProjects/MyWebsite/assets/my-photo.png" alt="my-photo">
+					<img src="assets/my-photo.png" alt="my-photo">
 				</div>
 
 				<div class="what-i-do">
@@ -262,7 +262,7 @@
 	<!-- Photo swipe -->
 
 	<script type="module">
-		import PhotoSwipeLightbox from '/MyProjects/MyWebsite/node_modules/photoswipe/dist/photoswipe-lightbox.esm.min.js';
+		import PhotoSwipeLightbox from './node_modules/photoswipe/dist/photoswipe-lightbox.esm.min.js';
 
 		const lightbox = new PhotoSwipeLightbox({
 			// may select multiple "galleries"
@@ -273,7 +273,7 @@
 			children: 'a',
 
 			// setup PhotoSwipe Core dynamic import
-			pswpModule: () => import('/MyProjects/MyWebsite/node_modules/photoswipe/dist/photoswipe.esm.js')
+			pswpModule: () => import('./node_modules/photoswipe/dist/photoswipe.esm.js')
 		});
 		lightbox.init();
 	</script>
