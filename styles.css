@@ -9,6 +9,14 @@ h1, h3, h5 {
     padding: 0;
 }
 
+.navbar a {
+    font-weight: 500;
+    color:#4b7185;
+}
+.navbar a:hover {
+    color: #5d8ba3;
+}
+
 #navbarNav {
     justify-content: flex-end;
 }
