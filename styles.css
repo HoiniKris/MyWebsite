@@ -177,6 +177,24 @@ main {
    object-fit: cover;
 }
 
+/* Contact me */
+
+.contact-me .contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    margin-top: 50px;
+}
+
+.contact-me .contact a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--dark-main-color);
+    padding: 5px;
+    font-size: x-large;
+    margin: 10px;
+}
+
 /* footer */
 
 .footer-copyright {
@@ -205,24 +223,28 @@ main {
     .project:nth-child(even) {
         flex-direction: column;
     }
+    .project .project-info  {
+        margin-top: 40px;
+        padding: 0;
+    }
+    .project .pswp-gallery {
+        margin-top: 30px;
+    }   
 }
 
 
 /* For Small Screens */
 
 @media screen and (max-width: 400px) {
+    .my-photo {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .what-i-do {
         margin-top: 40px;
         padding: 10px;
         text-align: center;
     }
 
-    .project .project-info  {
-        margin-top: 40px;
-        padding: 10px;
-    }
-
-    .project .pswp-gallery {
-        margin-top: 30px;
-    }   
 }
+
