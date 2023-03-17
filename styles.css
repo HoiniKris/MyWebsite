@@ -54,7 +54,7 @@ h1, h3, h5 {
 main {
     padding: 50px 20px;
 }
- section {
+section {
     padding: 50px 20px;
  }
 
@@ -236,6 +236,9 @@ main {
 /* For Small Screens */
 
 @media screen and (max-width: 400px) {
+    main {
+        padding: 20px 5px;
+    }
     .my-photo {
         padding-left: 0;
         padding-right: 0;
@@ -244,6 +247,9 @@ main {
         margin-top: 40px;
         padding: 10px;
         text-align: center;
+    }
+    .contact-me .contact a {
+        margin: 2px;
     }
 
 }
